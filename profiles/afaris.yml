@@ -1,0 +1,109 @@
+# Profile Template for Gaza Professionals Directory
+# Copy this file to profiles/your-slug.yml and fill in your information
+# Remove all comments (lines starting with #) before submitting
+
+slug: ahmed-fares  # Use lowercase, hyphens only (e.g., mohammed-tayeh)
+name: Ahmed Fares
+name_arabic: احمد فارس   # Optional
+type: professional  # or "company"
+
+# For Professionals
+title: Devops Engineer
+title_arabic: مهندس انظمة تكنولوجيا معلومات  # Optional
+
+# For Companies
+# industry: Your Industry (e.g., Technology, Design, Healthcare)
+# company_size: startup  # or small, medium, large
+# founded: 2020  # Year founded
+
+location: Egypt - Cairo  # e.g., Gaza City, Khan Younis, Rafah
+
+services:
+  - Webhosting
+  - Docker Containers
+  - Kubernetes
+
+tags: [Webhosting, Docker Containers, Kubernetes, Ubuntu]  # Relevant keywords
+
+contact:
+  email: a.faris@live.com
+  website: https://your-website.com  # Optional
+  linkedin: https://linkedin.com/in/your-profile  # Optional
+  github: https://github.com/ahfaris  # Optional
+  behance: https://behance.net/your-profile  # Optional for designers
+
+# Optional Sections Below - Remove if not applicable
+
+about: |
+  Motivated and results-driven DevOps Engineer with over 3 years of experience in automating, optimizing, and managing software delivery pipelines, and over 10 years working as Linux Web Admin, Proficient In managing webhosting using Apache, Nginx, PHP, MySQL, IIS. Proficient in implementing CI/CD pipelines, cloud infrastructure management, and containerization solutions. Adept at improving system performance and collaborating with cross-functional teams to deliver high-quality software solutions.
+
+about_arabic: |  # Optional
+ مهندس ديف اوبس وانظمة
+# For Professionals Only
+technical_skills:
+  - Linux OS
+  - Devops
+  - Docker Contianers
+  - CI/CD
+
+work_experience:
+  - company: Dreams Co
+    role: DevOps
+    period: 2024 - Present
+    description: |
+      DevOps Engineer
+  - company: UNICC
+    role: Web Linux Admin
+    period: 2021 - 2024
+    description: |
+      We Linux Admin.
+
+# For Companies Only
+# technical_expertise:
+#   - Technology 1
+#   - Technology 2
+#   - Technology 3
+
+# team:
+#   size: 25
+#   roles:
+#     - Role 1
+#     - Role 2
+#     - Role 3
+
+# For Both Professionals and Companies
+certifications:
+  - name: AWS Certified practiotioner 
+    issuer: Issuing Organization
+    date: 2024
+  - name: CCNA
+    issuer: Cisco
+    date: 2014
+
+projects:
+  - name: Project Name
+    url: https://github.com/your-username/project  # Optional
+    description: |
+      Describe the project, your role, and the impact or results.
+      Include technologies used and any notable achievements.
+  - name: Another Project
+    description: |
+      Another project description.
+
+# For Companies Only
+# notable_projects:
+#   - name: Client Project Name
+#     description: |
+#       Description of the project and outcomes.
+
+# For Professionals Only
+# languages: [Arabic, English, French]  # Languages you speak
+# availability: available  # available, busy, or unavailable
+
+# Verification Checklist (remove before submitting):
+# - [ ] All required fields are filled
+# - [ ] Slug is unique and follows naming convention
+# - [ ] Contact information is professional and active
+# - [ ] Information is accurate and current
+# - [ ] File is saved as profiles/your-slug.yml
+# - [ ] All comments and this checklist are removed
