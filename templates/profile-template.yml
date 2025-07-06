@@ -1,0 +1,112 @@
+# Profile Template for Gaza Professionals Directory
+# Copy this file to profiles/your-slug.yml and fill in your information
+# Remove all comments (lines starting with #) before submitting
+
+slug: your-unique-slug  # Use lowercase, hyphens only (e.g., mohammed-tayeh)
+name: Your Full Name
+name_arabic: اسمك بالعربية  # Optional
+type: professional  # or "company"
+
+# For Professionals
+title: Your Professional Title
+title_arabic: مسماك المهني بالعربية  # Optional
+
+# For Companies
+# industry: Your Industry (e.g., Technology, Design, Healthcare)
+# company_size: startup  # or small, medium, large
+# founded: 2020  # Year founded
+
+location: Your Location in Gaza  # e.g., Gaza City, Khan Younis, Rafah
+
+services:
+  - Service 1
+  - Service 2
+  - Service 3
+
+tags: [tag1, tag2, tag3, tag4]  # Relevant keywords
+
+contact:
+  email: your.email@example.com
+  website: https://your-website.com  # Optional
+  linkedin: https://linkedin.com/in/your-profile  # Optional
+  github: https://github.com/your-username  # Optional
+  behance: https://behance.net/your-profile  # Optional for designers
+
+# Optional Sections Below - Remove if not applicable
+
+about: |
+  Write a comprehensive description of yourself or your company.
+  This can be multiple paragraphs and should highlight your expertise,
+  experience, and what makes you unique.
+
+about_arabic: |  # Optional
+  وصف شامل عنك أو عن شركتك باللغة العربية.
+
+# For Professionals Only
+technical_skills:
+  - Skill 1
+  - Skill 2
+  - Skill 3
+
+work_experience:
+  - company: Company Name
+    role: Your Role
+    period: 2021 - Present
+    description: |
+      Describe your responsibilities and achievements in this role.
+      Include specific metrics and outcomes where possible.
+  - company: Previous Company
+    role: Previous Role
+    period: 2018 - 2021
+    description: |
+      Another work experience entry.
+
+# For Companies Only
+# technical_expertise:
+#   - Technology 1
+#   - Technology 2
+#   - Technology 3
+
+# team:
+#   size: 25
+#   roles:
+#     - Role 1
+#     - Role 2
+#     - Role 3
+
+# For Both Professionals and Companies
+certifications:
+  - name: Certification Name
+    issuer: Issuing Organization
+    date: 2023-08
+  - name: Another Certification
+    issuer: Another Organization
+    date: 2022-11
+
+projects:
+  - name: Project Name
+    url: https://github.com/your-username/project  # Optional
+    description: |
+      Describe the project, your role, and the impact or results.
+      Include technologies used and any notable achievements.
+  - name: Another Project
+    description: |
+      Another project description.
+
+# For Companies Only
+# notable_projects:
+#   - name: Client Project Name
+#     description: |
+#       Description of the project and outcomes.
+
+# For Professionals Only
+# languages: [Arabic, English, French]  # Languages you speak
+# availability: available  # available, busy, or unavailable
+
+# Verification Checklist (remove before submitting):
+# - [ ] All required fields are filled
+# - [ ] Slug is unique and follows naming convention
+# - [ ] Contact information is professional and active
+# - [ ] Information is accurate and current
+# - [ ] File is saved as profiles/your-slug.yml
+# - [ ] All comments and this checklist are removed

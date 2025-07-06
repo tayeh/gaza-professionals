@@ -1,0 +1,99 @@
+name: Validate Profile Submissions
+
+on:
+  pull_request:
+    paths:
+      - 'profiles/**/*.yml'
+      - 'profiles/**/*.yaml'
+  push:
+    branches: [main]
+    paths:
+      - 'profiles/**/*.yml'
+      - 'profiles/**/*.yaml'
+
+jobs:
+  validate-profiles:
+    runs-on: ubuntu-latest
+    name: Check for duplicate slugs
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Install yq
+        run: |
+          wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/local/bin/yq &&\
+          chmod +x /usr/local/bin/yq
+
+      - name: Check for duplicate slugs
+        run: |
+          echo "🔍 Checking for duplicate slugs in PR..."
+
+          # Find all YAML files in profiles/
+          all_files=$(find profiles/ -type f -name "*.yml" -o -name "*.yaml" || true)
+
+          if [ -z "$all_files" ]; then
+            echo "⚠️ No YAML files found in profiles/"
+            exit 0
+          fi
+
+          echo "Scanning YAML files:"
+          echo "$all_files"
+          echo ""
+
+          # Initialize temporary file for slugs
+          slugs_file=$(mktemp)
+
+          # Check each YAML file
+          for file in $all_files; do
+            if [ ! -f "$file" ]; then
+              echo "⚠️ File $file not found"
+              continue
+            fi
+
+            # Try extracting slug using yq (root or nested)
+            slug=$(yq eval '.. | select(has("slug")) | .slug' "$file" 2>/dev/null || echo "")
+
+            # Fallback to grep if yq fails
+            if [ -z "$slug" ] || [ "$slug" = "null" ]; then
+              slug=$(grep -E "^[[:space:]]*slug:" "$file" | sed 's/^[[:space:]]*slug: *//g' | tr -d '"' | tr -d "'" | xargs || echo "")
+            fi
+
+            if [ -z "$slug" ]; then
+              echo "⚠️ No valid slug found in $file"
+              echo "  Raw content (first 5 lines):"
+              head -n 5 "$file" | sed 's/^/    /'
+              continue
+            fi
+
+            echo "Checking $file (slug: $slug)..."
+
+            # Store slug and file in temporary file
+            echo "$slug:$file" >> "$slugs_file"
+          done
+
+          # Check for duplicate slugs
+          duplicates=$(sort "$slugs_file" | cut -d: -f1 | uniq -d)
+          if [ -n "$duplicates" ]; then
+            echo "❌ Duplicate slugs found:"
+            for dup in $duplicates; do
+              echo "  Slug '$dup' found in:"
+              grep "^$dup:" "$slugs_file" | cut -d: -f2- | sed 's/^/    - /'
+            done
+            echo "❌ PR rejected: Duplicate slugs detected!"
+            exit 1
+          fi
+
+          # Check changed files for additional validation
+          changed_files=$(git diff --name-only origin/${{ github.event.pull_request.base.ref }}...HEAD | grep -E '^profiles/.*\.(yml|yaml)$' || true)
+          if [ -n "$changed_files" ]; then
+            echo "Changed files in PR:"
+            echo "$changed_files" | sed 's/^/  - /'
+          else
+            echo "✅ No profile files changed in this PR"
+          fi
+
+          echo "✅ All slugs are unique!"
+

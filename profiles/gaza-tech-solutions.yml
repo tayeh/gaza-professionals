@@ -1,0 +1,65 @@
+slug: gaza-tech-solutions
+name: Gaza Tech Solutions
+name_arabic: حلول غزة التقنية
+type: company
+industry: Technology
+location: Gaza City, Gaza
+company_size: medium
+founded: 2019
+services:
+  - Web Development
+  - Mobile App Development
+  - Cloud Solutions
+  - Digital Transformation
+tags: [web, mobile, cloud, react, nodejs, aws]
+contact:
+  email: info@gazatech.com
+  website: https://gazatech.com
+  linkedin: https://linkedin.com/company/gaza-tech-solutions
+
+about: |
+  this is a test compnay use the file or remove it if you'r the ower of this name
+
+about_arabic: |
+  شركة تقنية رائدة في غزة متخصصة في تطوير البرمجيات المخصصة وحلول التحول الرقمي. 
+  نساعد الشركات على تحديث عملياتها من خلال الحلول التقنية المبتكرة.
+
+technical_expertise:
+  - React & Next.js
+  - Node.js & Express
+  - Python & Django
+  - AWS & Azure
+  - PostgreSQL & MongoDB
+  - Docker & Kubernetes
+  - Mobile Development (React Native)
+
+team:
+  size: 25
+  roles:
+    - Full Stack Developers
+    - Mobile Developers
+    - DevOps Engineers
+    - UI/UX Designers
+    - Project Managers
+
+notable_projects:
+  - name: Gaza Municipality Portal
+    description: |
+      Digital transformation of municipal services. Reduced processing time by 70% 
+      and improved citizen satisfaction.
+  - name: Healthcare Management System
+    description: |
+      Comprehensive system for local hospitals. Streamlined patient management 
+      and improved operational efficiency.
+  - name: E-commerce Platform for Local Businesses
+    description: |
+      Multi-vendor platform supporting 100+ local businesses. Generated $2M+ 
+      in online sales during first year.
+
+certifications:
+  - name: AWS Partner
+    issuer: Amazon Web Services
+    date: 2022-03
+  - name: Microsoft Partner
+    issuer: Microsoft
+    date: 2021-11
