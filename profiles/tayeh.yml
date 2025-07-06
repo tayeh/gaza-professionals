@@ -1,0 +1,66 @@
+slug: tayeh
+name: Mohammed Tayeh
+type: professional
+title: DevOps Engineer
+location: Cairo, Egypt
+services:
+  - Kubernetes Consulting
+  - CI/CD Pipelines
+  - Cloud Infrastructure
+tags: [devops, kubernetes, cloud, aws, terraform]
+contact:
+  email: tayeh@example.com
+  website: https://tayeh.dev
+  github: https://github.com/tayeh
+  linkedin: https://linkedin.com/in/tayeh
+
+about: |
+  I am a DevOps Engineer with 7+ years of experience designing and managing cloud-native infrastructure. 
+  Passionate about automation, scalability, and helping teams deliver software faster and more reliably.
+
+technical_skills:
+  - Kubernetes
+  - AWS
+  - Terraform
+  - GitHub Actions
+  - Prometheus & Grafana
+  - Docker
+  - Jenkins
+  - Ansible
+
+work_experience:
+  - company: Arabsstock
+    role: Senior DevOps Engineer
+    period: 2021 - Present
+    description: |
+      Leading infrastructure and platform engineering using GitOps and observability best practices.
+      Reduced deployment time by 80% and improved system reliability to 99.9% uptime.
+  - company: Freelance
+    role: DevOps Consultant
+    period: 2018 - 2021
+    description: |
+      Built CI/CD and cloud platforms for startups and enterprises across the Middle East.
+      Helped 15+ companies migrate to cloud-native architectures.
+
+certifications:
+  - name: AWS Certified DevOps Engineer – Professional
+    issuer: Amazon Web Services
+    date: 2023-08
+  - name: CKA – Certified Kubernetes Administrator
+    issuer: CNCF
+    date: 2022-11
+  - name: Terraform Associate
+    issuer: HashiCorp
+    date: 2022-06
+
+projects:
+  - name: DevOps Bootstrapping Kit
+    url: https://github.com/tayeh/devops-kit
+    description: |
+      A starter kit for setting up CI/CD and observability for new projects.
+      Used by 500+ developers worldwide.
+  - name: Internal Platform Dashboard
+    url: https://github.com/tayeh/internal-dashboard
+    description: |
+      Built a metrics dashboard with Prometheus, Grafana, and Loki for internal operations.
+      Improved incident response time by 60%.
