@@ -357,9 +357,7 @@ contact:
   
 about: |
   I am an accomplished Quality Assurance Engineer with extensive expertise in software testing, ensuring the delivery of superior products. 🚀 With a passion for excellence, I have consistently excelled in verifying software functionality, detecting bugs, and enhancing overall user experience. 🧪
-
-
-Thank you for visiting my profile, and I look forward to collaborating with you! 🤝.
+  Thank you for visiting my profile, and I look forward to collaborating with you! 🤝.
 
 technical_skills:
   - Manual Testing
@@ -377,16 +375,9 @@ work_experience:
     period: Nov 2024 - April 2025
     description: |
       I worked as a Quality Assurance Engineer, where I was part of an Agile team focused on delivering high-quality software products. My responsibilities included analyzing user stories, designing and executing test cases, and performing manual testing across different stages of the development cycle. I actively participated in daily stand-ups, sprint planning meetings, and retrospectives, ensuring clear communication between testers, developers, and project managers. I used tools like Trello for task management and reported bugs with clarity and precision to help the team resolve issues efficiently.
-    certifications:
-  - name: 
-    issuer: 
-    date: 
-  
-projects:
-  - name: 
-    url: 
-    description: |
-       `,$g=`slug: tayeh
+
+       
+`,$g=`slug: tayeh
 name: Mohammed Ali Tayeh
 type: professional
 title: Senior DevOps Engineer
