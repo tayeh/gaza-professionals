@@ -1,0 +1,60 @@
+slug: tabibi
+name: Tabibi
+name_arabic: طبيبي
+type: company
+industry: Healthcare
+company_size: startup
+founded: 2026
+location: Gaza City, Gaza
+
+services:
+  - Appointment Booking
+  - Telemedicine / Remote Consultations
+  - Electronic Clinic Management
+  - AI Medical Assistant
+  - E-Prescriptions and Digital Records
+
+tags: [healthcare, telemedicine, gaza, palestine, appointment-booking, react, aspnet, arabic, rtl]
+
+contact:
+  email: mazan.seifppp@gmail.com
+  website: https://tabibi-frontend.apps.taqat.academy/
+  linkedin: https://www.linkedin.com/company/tabibi-gaza/
+  github: https://github.com/Tabibi-Gaza
+
+about: |
+  Tabibi (طبيبي) is a Palestinian digital healthcare platform based in Gaza.
+  It connects patients with doctors through appointment booking and remote
+  medical consultations, and runs paperless electronic clinics with
+  multi-role dashboards for patients, doctors, secretaries and admins.
+
+  The platform includes an AI medical assistant that routes patients to the
+  correct medical specialty based on their symptoms, digital prescriptions,
+  full medical histories, and real-time chat between patients and doctors.
+
+  Founded by Mazen Abu Saif (مازن أبو سيف).
+
+about_arabic: |
+  طبيبي (Tabibi) منصة طبية رقمية فلسطينية مقرها غزة، تربط المرضى بالأطباء
+  عبر حجز المواعيد والاستشارات الطبية عن بُعد، وتدير العيادات الإلكترونية
+  بأدوار متعددة: مريض، طبيب، سكرتير، وإدارة.
+
+  تضم المنصة مساعدًا طبيًا ذكيًا يوجّه المريض للتخصص الطبي المناسب حسب
+  الأعراض، ووصفات إلكترونية، وسجلات طبية رقمية، ومحادثات فورية بين المريض
+  والطبيب.
+
+  تأسست على يد مازن أبو سيف (Mazen Abu Saif).
+
+technical_expertise:
+  - React 19 & Vite
+  - ASP.NET Core
+  - SignalR Real-time Chat
+  - Tailwind CSS
+  - PostgreSQL / SQL Server
+
+notable_projects:
+  - name: Tabibi Platform
+    description: |
+      End-to-end digital healthcare platform for Gaza: appointment booking,
+      telemedicine, AI specialty routing, electronic prescriptions and
+      clinic management dashboards.
